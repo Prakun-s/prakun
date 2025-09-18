@@ -25,3 +25,28 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+
+import random
+
+
+test_random = random.randint(1, 20)
+
+print("-- เกมทายตัวเลข ")
+print("--ทายเลขตั้งแต่ 1 - 20")
+print("คุณมีโอกาส 6 ครั้ง")
+
+for i in range(6):
+    print(f"ความพยายามครั้งที่ {i+1}")
+    guess_number = int(input("What is your guess number (1-20)? : "))
+
+    if test_random == guess_number:
+        print("ยูเก่งมาก มั่วถูกตั้งแต่แรกเลย เก่งมากๆ")
+        break
+
+    elif guess_number < test_random:
+        print("ผิดจ้า น้อยไปเนอะ")
+        
+    elif guess_number > test_random:
+        print("ผิดจ้า เยอะไปเนอะ")
+    
+

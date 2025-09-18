@@ -16,7 +16,7 @@ Update age (by creating a new tuple)
 # Complete this program
 def personal_info_manager():
     # Create initial person tuple
-    person = ("Oshi", 0, "Nakonsawan", "thailand")  # name, age, city, country
+    person = ("O-shi", 0, "nakonsawan", "thailand")  # name, age, city, country
     hobbies = []
 
 
